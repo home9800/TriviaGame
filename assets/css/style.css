@@ -1,0 +1,64 @@
+
+/* Clear Fix */
+
+.clearfix {
+    overflow: auto
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* This is the initial start page code */
+
+.start {
+    width: 960px;
+    margin: 300px auto;
+    text-align: center;
+    top: 50%;
+}
+
+#startButton {
+    font-size: 90px;
+    background-color: blue;
+}
+
+
+/*Makes the Submit Button Dissapear */
+
+.afterSubmit {
+    display: none;
+}
+
+/* Main Content Area */
+
+body {
+    background-image: url('../images/christmas-dark.png');
+}
+
+.jumbotron {
+    display: none;
+    width: 900px;
+    margin: 200px auto;
+    background-image: url('../images/funky-lines.png')
+}
+
+.heading {
+    text-align: center;
+
+}
+
+#trivia {
+    color: black;
+    font-size: 20px;
+    
+}
+
+#button {
+    top: 30px;
+    font-size: 50px;
+}

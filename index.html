@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    
+<!--Where the start button will go-->
+
+<div class= "start">
+    <button id="startButton" type="button" onclick="start();">Start Game</button>
+</div>
+
+
+
+
+<!--This is the exterior box where all the content will be placed-->    
+<div class= "jumbotron">   
+    <div class= "heading">
+
+        <h1>Earth Quiz</h1>
+
+    </div>
+
+
+<!--This is where all the questions go-->
+    <div>
+        <form id="trivia" name="trivia">
+
+            <p>What is the color of grass?</p> 
+            <input type= "radio" class= "question1" name= "question1" value= "Red">Red<br>
+            <input type= "radio" class= "question1" name= "question1" value= "Green">Green<br>
+            <input type= "radio" class= "question1" name= "question1" value= "Blue">Blue<br>
+            
+            <p>What is the color of the sky?</p> 
+            <input type= "radio" id= "mc" name= "question2" value= "Red">Red<br>
+            <input type= "radio" id= "mc" name= "question2" value= "Green">Green<br>
+            <input type= "radio" id= "mc" name= "question2" value= "Blue">Blue<br>
+            
+            <p>What is the color of the sun?</p> 
+            <input type= "radio" id= "mc" name= "question3" value= "Red">Red<br>
+            <input type= "radio" id= "mc" name= "question3" value= "Green">Green<br>
+            <input type= "radio" id= "mc" name= "question3" value= "Blue">Blue<br>
+
+
+            <!--I can make the code execute instead of pressing a button simply execute at the end of the timer.-->
+
+                <input id="button" type= "button" value= "Complete" onclick = "check();">
+
+
+        </form>
+    </div>
+
+<!--This comes up after the submit button or when the timer is done-->
+
+    <div class= "afterSubmit">
+        <p id= "numberCorrect">You completed the trivia on Earth!</p>
+    </div>
+    <script src="assets/javascript/app.js"></script>
+</div>    
+
+</body>
+</html>
